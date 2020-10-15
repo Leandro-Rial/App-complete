@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 5%;
+    background: #36ceb4;
+    align-items: center;
+}
+
+nav .nav-logo, .nav-menu, .nav-rigth {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    align-items: center;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav .nav-logo li a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav .nav-logo li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+nav .nav-menu li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .nav-rigth li a:hover {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 5px solid #fff;
+}
+
+
+/* +++++++++++++++++++++++++++++++ */
+/* +++++  IMAGEN FORMULARIO  +++++ */
+/* +++++++++++++++++++++++++++++++ */
+
+.formulario {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+}
+
+.image {
+    width: 50%;
+    margin: 0;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    -webkit-box-shadow: 10px 6px 5px 0px rgba(143,139,143,1);
+    -moz-box-shadow: 10px 6px 5px 0px rgba(143,139,143,1);
+    box-shadow: 10px 6px 5px 0px rgba(143,139,143,1);
+}
+
+.cuerpo-form {
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #000;
+}
+
+.cuerpo-form .form {
+    height: 100%;
+    padding: 4em 8em;
+}
+
+.cuerpo-form .form .titleStyle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+}
+
+.cuerpo-form .form label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* +++++++++++++++++++++++++++++++ */
+/* +++++  IMAGEN FORMULARIO  +++++ */
+/* +++++++++++++++++++++++++++++++ */
+.card-allNotes {
+    transition: 0.4s;
+}
+
+.card-allNotes:hover {
+    background: rgba(227, 240, 237, 0.635);
+    -webkit-box-shadow: 10px 6px 5px 0px rgba(143,139,143,1);
+    -moz-box-shadow: 10px 6px 5px 0px rgba(143,139,143,1);
+    box-shadow: 10px 6px 5px 0px rgba(143,139,143,1);
+}

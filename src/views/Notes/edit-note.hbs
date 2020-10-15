@@ -1,0 +1,36 @@
+<div class="formulario">
+
+
+    <div class="image">
+        <img src="/img/book2.jpg" alt="">
+    </div>
+
+    <div class="cuerpo-form">
+        <div class="form">
+            <div class="head-form">
+                <h1 class="titleStyle">Edit Note</h1>
+            </div>
+            <hr>
+            <div class="body-form mt-5">
+                <form action="/notes/edit/{{note._id}}?_method=PUT" method="POST">
+                    <input type="hidden" name="_method" value="PUT">
+
+                    <div class="form-group">
+                        <label for="">Title</label>
+                        <input type="text" name="title" value="{{ note.title }}" required class="form-control mt-2 mb-2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Descirption</label>
+                        <textarea name="description" required class="form-control mt-2 mb-2">{{ note.description }}</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-warning btn-block mt-4" type="submit">Save</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
