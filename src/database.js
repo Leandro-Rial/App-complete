@@ -4,7 +4,8 @@ const dbUri = `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cluster
 
 mongoose.connect(dbUri, {
     useUnifiedTopology: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useCreateIndex: true
 })
     .then(db => console.log('Connected to Database'))
     .catch(err => console.log(err));

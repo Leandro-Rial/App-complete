@@ -12,6 +12,8 @@ notesCtrl.createNewNote = async (req, res) => {
 
     const newNote = new Note({ title, description })
 
+    newNote.user = req.user.id;
+
     await newNote.save();
 
     req.flash('success_msg', 'Note Added Successfully');
@@ -22,7 +24,7 @@ notesCtrl.createNewNote = async (req, res) => {
 
 // GET ALL NOTES
 notesCtrl.renderNotes = async (req, res) => {
-    const notes = await Note.find().lean();
+    const notes = await Note.find({ user: req.user.id }).lean().sort({ createdAt: 'desc' });
 
     res.render('notes/all-notes', { notes });
 }
